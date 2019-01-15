@@ -1,0 +1,99 @@
+
+
+npm install node-sass --save-dev
+npm run compile:sass
+
+control+shift+p install package -> SCSS
+/////USE DIFERENTE PICTURES. 
+////BIGGER 600PX USE hero.jpg
+
+<picture >
+	<source srcset="css/hero.jpg" media="(max-width:600px)">
+	<img src="css/hero2.svg" style="width: 100px;">
+</picture>
+
+
+<picture >
+	<source srcset="css/hero.jpg" media="(max-width:600px)">
+	<source srcset="css/hero3.svg" media="(max-width:900px)">
+	<img src="css/hero2.svg" style="width: 100px;">
+</picture>
+
+
+
+
+//////SELECTORS
+
+    box-shadow: 0px 0px 10px 0px #797979;
+
+    
+& td:first-of-type
+& th:not(:first-child)
+  th:nth-child(1)
+
+Black background SCRIM
+/////border-bottom-left-radius: 8px;	
+
+/////TRANSITIONS
+-webkit-transition: all .300s; 
+
+
+///////SASS-COLORS
+https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
+
+
+///////FLEX CENTER
+    	display: flex;
+	    align-items: center;
+	    justify-content:center;
+            flex-direction: column; 
+
+///////TRANSLATE WITH BOTH
+		transform: translate(-25%, -25%);
+
+///////NO MOUSE EVENTS
+		pointer-events:none;   
+		user-select: none;
+
+///////ESCONDER EL ESCEDENTE
+	   text-overflow: ellipsis;
+
+
+ 		//align-self:center;
+
+setTimeout(function() { }, 5000);
+
+
+/////REMOVE THE SHAKING WHEN MOUSE IS OVER
+
+https://forum.webflow.com/t/a-fix-for-when-your-elements-move-up-and-or-blur-during-animations-interactions-on-chrome/11629
+
+     -webkit-backface-visibility: hidden;
+	 -webkit-transform: translateZ(0) scale(1.0, 1.0);
+
+/////TEXT OVERFLOW
+    white-space: nowrap;
+	text-overflow: ellipsis;
+	text-wrap:none;  			
+
+////HIDE SCROLL BAR
+
+&::-webkit-scrollbar {  display: none; }
+
+
+
+
+///////SVG
+    <svg><use xlink:href="css/svg.svg#person"></use></svg>
+
+
+		
+
+
+
+
+
+
+
+
+
